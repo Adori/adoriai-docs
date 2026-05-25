@@ -1,77 +1,58 @@
-# Adori AI API Documentation
+# Adori AI - AI Video Generator API Docs
 
-This folder contains standalone API documentation for Adori AI Studio, built
-with [Docusaurus](https://docusaurus.io/).
+Turn text content into engaging videos with Adori AI. This repository hosts the
+official API documentation for building automated video workflows with Adori AI.
 
-## Development
+Adori AI helps teams and creators convert blogs, text, PDFs, audio, and podcast
+content into publish-ready videos with AI-generated scenes, lifelike voiceovers,
+captions, and media assets.
 
-Start the development server:
+Website: [adoriai.com](https://www.adoriai.com/)
+
+## What Adori AI Offers
+
+- AI video creation from blog posts and text content
+- PDF to video and audio to video workflows
+- AI voiceovers with multiple natural-sounding voice options
+- Auto-captions with timing sync for short-form and long-form videos
+- API-driven video generation for product, content, and growth teams
+
+## Who This Is For
+
+- Marketing teams repurposing blog content into social videos
+- SaaS teams automating product walkthrough and release videos
+- Agencies producing client-ready videos at scale
+- Developers integrating video generation into internal tools and apps
+
+## Popular Search Terms Covered
+
+Adori AI is relevant for users searching:
+
+- AI video generator
+- blog to video AI
+- text to video AI
+- PDF to video converter
+- audio to video maker
+- AI voiceover video tool
+- automated video creation API
+
+## API Documentation
+
+- Intro: `docs/intro.md`
+- Authentication: `docs/authentication.md`
+- Video rendering and status endpoints: `docs/api/`
+
+## Quick Start (Contributors)
 
 ```bash
-cd adoriai-docs
 npm install
 npm start
 ```
 
-The documentation will be available at **http://localhost:3001**.
+Local docs run at `http://localhost:3001`.
 
-## Build for Production
+## Why This Repository Exists
 
-Build static files:
-
-```bash
-cd adoriai-docs
-npm run build
-```
-
-The built files will be in the `build/` directory.
-
-## Deployment to docs.adoriai.com
-
-This documentation is designed to be deployed as a separate project on a
-subdomain.
-
-### Option 1: Move to Separate Repository
-
-1. Create a new repository for documentation
-2. Copy this entire `adoriai-docs` folder to the new repository
-3. Update the `docusaurus.config.ts`:
-   - Set `url` to `https://docs.adoriai.com`
-   - Update organization and project name
-4. Deploy using your preferred hosting service
-
-### Option 2: Deploy from Current Repo
-
-Deploy the `adoriai-docs` folder as a separate project:
-
-- **Vercel**: Deploy from the `adoriai-docs` directory
-- **Netlify**: Configure build root to `adoriai-docs`
-- **GitHub Pages**: Use `npm run deploy` with GitHub Pages setup
-
-## Documentation Structure
-
-```text
-adoriai-docs/
-├── docs/
-│   ├── intro.md
-│   ├── authentication.md
-│   └── api/
-│       ├── generate-video-data.md
-│       ├── project-status.md
-│       ├── render-video.md
-│       ├── render-jobs.md
-│       ├── media-upload.md
-│       └── usage.md
-├── src/
-│   └── css/
-│       └── custom.css
-├── docusaurus.config.ts
-├── sidebars.ts
-└── package.json
-```
-
-## Notes
-
-- These docs focus on the current API behavior in `adoriai-studio`.
-- Most endpoints are currently intended for authenticated app sessions.
-- API key support exists in the platform and can be expanded endpoint-by-endpoint.
+This docs project helps developers integrate Adori AI into real content
+pipelines, from generating video data to rendering final outputs and tracking
+job status programmatically.
